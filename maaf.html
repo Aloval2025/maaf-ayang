@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Maaf Ayang 😢❤️</title>
+  <style>
+    body {
+      background: pink;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      padding-top: 50px;
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    h1 {
+      color: red;
+      font-size: 40px;
+      animation: float 2s ease-in-out infinite;
+    }
+
+    p {
+      font-size: 20px;
+      color: #444;
+      margin: 20px;
+    }
+
+    .love {
+      color: red;
+      font-size: 30px;
+      animation: heartbeat 1s infinite;
+    }
+
+    .gif {
+      width: 200px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .btn {
+      background: red;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin: 10px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: darkred;
+    }
+
+    #btnNgga {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Maafin noval ya ayangg 😔</h1>
+  <img src="https://media.tenor.com/kI9Xz5p9e1UAAAAi/bubu-dudu-love.gif" alt="Maaf Gif" class="gif">
+  <p>noval salah, noval gatau harus ngapain, dan aku kangen kamu banget 💔</p>
+  <p class="love">❤️❤️❤️</p>
+  <p>Kalo ayang maafin akuu nanti dibeliin eskrim 😘 </p>
+
+  <div class="button-container">
+  <button class="btn" onclick="alert('Yeeeyy! Ayang maafin aku 😍 Sekarang peluk yok 🤗')">Maafin 😘</button>
+  <button class="btn" id="btnNgga" onmouseover="geserButton()">Ngga 😡</button>
+</div>
+
+
+  <script>
+    function geserButton() {
+      const btn = document.getElementById('btnNgga');
+      const x = Math.floor(Math.random() * (window.innerWidth - 100));
+      const y = Math.floor(Math.random() * (window.innerHeight - 100));
+      btn.style.left = x + 'px';
+      btn.style.top = y + 'px';
+    }
+  </script>
+
+</body>
+</html>
